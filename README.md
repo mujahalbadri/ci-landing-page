@@ -13,11 +13,11 @@
 4. Buat database baru dengan nama <code>ci-landing-page</code>
 5. Rename file <code>env</code> menjadi <code>.env</code>
 6. Konfigurasi database di <code>.env</code> seperti berikut :
-   database.default.hostname = localhost
-   database.default.database = ci-landing-page
-   database.default.username = root
-   database.default.password =
-   database.default.DBDriver = MySQLi
+   - database.default.hostname = localhost
+   - database.default.database = ci-landing-page
+   - database.default.username = root
+   - database.default.password =
+   - database.default.DBDriver = MySQLi
 7. Atur CI_ENVIRONMENT=development (jika masih ditahap pengembangan) atau CI_ENVIRONMENT=production (jika sudah ditahap produksi) pada file <code>.env</code>
 8. Ketik <code>php spark migrate</code> pada CLI
 10. Jalankan <code>php spark serve</code>
